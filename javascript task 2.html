@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+  <p>Before the script...</p>
+ 
+  <script>
+
+// function acceots a number and outputs its square  
+function square(num){
+	return num*num;
+}
+
+// function that accepts 3 numbers and returns the sum of them
+function sum3Nums(one,two,three){
+	return one+two+three;
+}
+
+// Create Person object with three values: name, age, occupation
+function Person(name,age,occupation)
+{
+var it = {};
+it.name = name;
+it.age = age;
+it.occupation = occupation;
+return it;
+}
+
+// Create a button that calls a function when clicked
+function buttonCall(){
+	window.alert("button was clicked!");
+}
+
+// create a button that increases the age of your Person object
+function incrementAge(){
+	student.age++;
+	console.log(student.age);
+}
+
+var numberSquared = square(5);
+var sumOfThree = sum3Nums(5,5,5);
+var student = Person("Jack", 27, "Student");
+// output the contents of object Person().
+console.log(student);
+
+// Edit the content of object Person() (student)
+student.name = "Stephen";
+student.age = 18;
+student.occupation = "Manager";
+
+
+console.log(numberSquared);
+console.log(sumOfThree);
+console.log(student);
+console.log(student.age);
+
+  </script>
+       <form>
+    <input type="button" onclick="buttonCall()" value="Click me!" />
+     <input type="button" onclick="incrementAge()" value="increase age" />
+      </form>      
+
+</body>
+</html>
+

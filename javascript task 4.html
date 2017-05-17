@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+
+ 
+  <script>
+  // Conditionals
+  function Person(name,age,occupation)
+{
+var it = {};
+it.name = name;
+it.age = age;
+it.occupation = occupation;
+return it;
+}
+var student = Person("Jack", 27, "Student");
+// Using conditoinal statements, create a funciton that checks if your person object is between 20-40 years old
+function checkAge(){
+	if (student.age <= 39){
+	student.age++;
+	console.log(student.age);
+}
+	else
+		alert("Student is too old");
+}
+
+
+
+ </script>
+
+       <input type="button" onclick="checkAge()" value="increase age" />  
+
+</body>
+</html>

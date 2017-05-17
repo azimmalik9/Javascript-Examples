@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+  <script>
+
+// Strings
+
+// perform toUpperCase on a variable with "He said "My name is elliot" " as the value and display it.
+var message = "He said \"My name is elliot\" ";
+
+// Perform an addition on a number variable and a string variable("1" + 2 etc.)
+var num1 = "1";
+var num2 = 2;
+var addStringToNumber = +num1+num2;
+
+// Create and array with 3 strings and output them all
+var cars = ["Saab", "Volvo", "BMW"];
+
+ console.log("Write via console: " + message.toUpperCase());
+console.log(addStringToNumber);
+
+for (i = 0; i < cars.length; i++) {
+    console.log(cars[i]);
+}
+
+// Add another string and output the array
+cars.push("newModel");
+for (i = 0; i < cars.length; i++) {
+    console.log(cars[i]);
+}
+
+// Remove the last string form the array and then output the array
+cars = cars.splice(0, cars.length-1);
+
+
+for (i = 0; i < cars.length; i++) {
+    console.log(cars[i]);
+}
+  </script>
+  
+</body>
+</html>
